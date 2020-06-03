@@ -37,7 +37,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[contenthash].js`,
     path: PATHS.dist,
-    publicPath: ""
+    publicPath: "./"
   },
   optimization: {
     splitChunks: {
@@ -62,9 +62,9 @@ module.exports = {
       {
         // Fonts
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader",
+        loader: "url-loader",
         options: {
-          name: "[name].[ext]"
+          name: "[name].[ext]",
         }
       },
       {
@@ -83,13 +83,19 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
-            options: { sourceMap: true }
+            options: { sourceMap: true}
           },
           {
             loader: "postcss-loader",
             options: {
               sourceMap: true,
               config: { path: `./postcss.config.js` }
+            }
+          },
+          {
+            loader: 'resolve-url-loader',
+            options: {
+              sourceMap: true,
             }
           },
           {

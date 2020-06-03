@@ -7,6 +7,7 @@ import './js/index'
 
 
 // SCSS
+//import './assets/scss/utils/fonts.scss'
 import './assets/scss/main.scss'
 
 // CSS (example)
