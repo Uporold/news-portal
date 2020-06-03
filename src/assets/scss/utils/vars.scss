@@ -1,0 +1,35 @@
+/* Vars:
+   ========================================================================== */
+
+// Font
+$mainFont                : 'PlayfairDisplay', Helvetica, Arial, sans-serif;
+$secondFont              : 'Raleway', Helvetica, Arial, sans-serif;
+
+// Size
+$mainFontColor           : #101010;
+$mainFontSize            : 28px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1.4;
+
+$desktopWidth            : 1200px;
+$smDesktopWidth          : 1024px;
+$tableWidth              : 800px;
+$smTableWidth            : 640px;
+$phoneWidth              : 480px;
+$smPhoneWidth            : 320px;
+
+/*
+ All colors taken from:
+ https://github.com/vedees/uimini
+*/
+
+// Main color
+$default-color           : #ffffff;
+$orange                  : #FF7931;
+$black                   : #000000;
+$dark-gray               : lighten($black, 30%);
+$gray                    : lighten($black, 70%);
+$light-gray              : #F9F9FC;
+
+
+

@@ -1,0 +1,180 @@
+.main-menu  {
+  @media (max-width: $desktopWidth) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  @media (min-width: $desktopWidth) {
+    padding-bottom: 47px;
+  }
+
+  &--no-js {
+    position: static;
+    margin-bottom: 20px;
+
+    .main-menu__button--color-orange {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: grid;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    row-gap: 20px;
+    @media (min-width: $desktopWidth) {
+      justify-content: space-between;
+      grid-template-columns: repeat(9, auto);
+    }
+  }
+
+  &__item {
+    //max-width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: $light-gray;
+    //margin-bottom: 20px;
+
+    @media (min-width: $desktopWidth) {
+      font-size: 15px;
+      letter-spacing: 2px;
+      background-color: $default-color;
+    }
+  }
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    padding: 18px 16px 18px 16px;
+    color: $black;
+
+    @media (max-width: $desktopWidth) {
+      display: flex;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 26px;
+        top: 23px;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid $gray;
+        border-right: 2px solid $gray;
+        transform: rotate(45deg);
+      }
+    }
+
+    @media (min-width: $desktopWidth) {
+      padding: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        height: 2px;
+        opacity: 0;
+        width: 0;
+        display: block;
+        background: $orange;
+        transition: .5s ;
+      }
+      &:hover {
+        color: $orange;
+        transition: .5s ;
+        &::before {
+          opacity: 1;
+          width: 100%;
+        }
+      }
+      &--active {
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          height: 2px;
+          opacity: 1;
+          width: 100%;
+          display: block;
+          background: $orange;
+        }
+      }
+    }
+  }
+  &__button {
+    @media (max-width: $desktopWidth) {
+      position: relative;
+      cursor: pointer;
+      display: inline-flex;
+      background-color: $default-color;
+    }
+    @media (min-width: $desktopWidth) {
+      display: none;
+    }
+
+    &--cross {
+      right: 16px;
+      width: 30px;
+      height: 30px;
+
+      &::before{
+        content: "";
+        position: absolute;
+        background-color: $gray;
+        transform: rotate(45deg);
+        width: 30px;
+        height: 2px;
+        top: 15px;
+        right: 0;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $gray;
+        transform: rotate(-45deg);
+        width: 30px;
+        height: 2px;
+        top: 15px;
+        right: 0;
+    }
+    }
+  }
+  &__button--color-orange {
+    background-color: $orange;
+    width: 50px;
+    height: 50px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 12px;
+      width: 26px;
+      height: 3px;
+      background-color: $default-color;
+      box-shadow: 0 8px 0 0 $default-color, 0 16px 0 0 $default-color;
+    }
+  }
+  .main-menu__sidebar{
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    background-color: $default-color;
+    top: 0;
+    left: -100%;
+    transition: all .5s ease;
+    @media (min-width: $tableWidth) and (max-width: $desktopWidth){
+      width: 50%;
+      transition: all .5s ease;
+    }
+  }
+  .main-menu__sidebar--active {
+    left: 0;
+    z-index: 999;
+  }
+  .main-menu__sidebar-control {
+    text-align: end;
+    padding: 12px 0 30px;
+    @media (min-width: $desktopWidth) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+<header class="page-header">
+  <div class="container">
+<h1 class="page-header__text">Новости культуры</h1>
+
+    <!--<svg class="test">
+      <use xlink:href="assets/svg-sprite/icons.svg#watched" />
+    </svg>
+    -->
+
+    <div class="page-header__main-menu main-menu main-menu--active main-menu--no-js">
+      <button class="main-menu__button main-menu__button--color-orange">
+      </button>
+      <div class="main-menu__sidebar">
+        <div class="main-menu__sidebar-control">
+          <button class="main-menu__button main-menu__button--cross">
+          </button>
+        </div>
+        <nav class="main-menu__sidebar-content">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--active" href="#">Новости</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Обзоры</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Музыка</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Архитектура</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Кино</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Театр</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Литература</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Религия</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Живопись</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="swiper-container slider">
+  <div class="swiper-wrapper slider__wrapper">
+
+    <div class="swiper-slide slider__item">
+
+      <picture class="slider__img">
+        <source type="image/webp" srcset="assets/img/slider-1.webp">
+        <img src="assets/img/slider-1.jpg" alt="">
+      </picture>
+      <div class="slider__content">
+        <span class="slider__flag">Новое</span>
+        <h1 class="slider__header">Подводный отель</h1>
+        <p class="slider__text">Как известно, Дубай – город контрастов. Самые революционные
+          и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+      </div>
+
+    </div>
+
+    <div class="swiper-slide slider__item">
+
+        <picture class="slider__img">
+          <source type="image/webp" srcset="assets/img/slider-2.webp">
+          <img src="assets/img/slider-2.jpg" alt="">
+        </picture>
+        <div class="slider__content">
+          <span class="slider__flag">Новое</span>
+          <h1 class="slider__header">Подводный отель</h1>
+          <p class="slider__text">Как известно, Дубай – город контрастов. Самые революционные
+            и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="swiper-pagination"></div>
+
+  <div class="slider__control slider__control--next swiper-button-next"></div>
+  <div class="slider__control slider__control--prev swiper-button-prev"></div>
+</section>
+
+<main class="main container">
+  <section class="main__content">
+    <div class="main__news news">
+      <h2 class="main__header">Новости</h2>
+      <div class="news__container">
+        <article class="news__left">
+          <a class="news__link">
+            <div class="news__image news__image--big">
+              <img src="assets/img/article-1.jpg" alt="test">
+            </div>
+            <div class="news__info">
+              <h3 class="news__header">Новости культуры России и всего мира</h3>
+              <p class="news__text">В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards</p>
+            </div>
+          </a>
+        </article>
+        <section class="news__right">
+          <article class="news__right-element">
+            <div class="news__image news__image--small">
+              <img src="assets/img/article-2.jpg" alt="test">
+            </div>
+            <div class="news__info news__info--small">
+            <a class="news__link">
+              <h3 class="news__header news__header--small">Открытие нового памятника Евгению Леонову</h3>
+            </a>
+            <p class="news__text news__text--small">10 сентября в 15:00 был открыт памятник писателю</p>
+            </div>
+          </article>
+          <article class="news__right-element">
+            <div class="news__image news__image--small">
+              <img src="assets/img/article-3.jpg" alt="test">
+            </div>
+            <div class="news__info news__info--small">
+            <a class="news__link">
+              <h3 class="news__header news__header--small">Беседы с писателями</h3>
+            </a>
+            <p class="news__text news__text--small">Русские писатели говорят о важности искусства</p>
+            </div>
+          </article>
+          <article class="news__right-element">
+            <div class="news__image news__image--small">
+              <img src="assets/img/article-4.jpg" alt="test">
+            </div>
+            <div class="news__info news__info--small">
+            <a class="news__link">
+              <h3 class="news__header news__header--small">День и ночь св. Патрика: встреча старых друзей</h3>
+            </a>
+            <p class="news__text news__text--small">Не Джойсом единым живет Ирландия!</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+    <div class="main__reviews reviews">
+      <h2 class="main__header">Обзоры</h2>
+      <div class="reviews__container">
+        <article class="reviews__item">
+          <div class="reviews__image">
+          <img src="assets/img/review-1.jpg" alt="test">
+          </div>
+            <div class="reviews__info">
+              <h3 class="reviews__header">«Шальные годы» Монпарнаса</h3>
+              <p class="news__text  reviews__text">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+            </div>
+        </article>
+        <article class="reviews__item">
+          <div class="reviews__image">
+            <img src="assets/img/review-2.jpg" alt="test">
+          </div>
+          <div class="reviews__info">
+            <h3 class="reviews__header">Анатомия за 30 секунд</h3>
+            <p class="news__text  reviews__text">Сейчас, когда мир открыт нараспашку для человека
+              и его познавательных изысканий, интерес
+              к научно-популярной литературе заметно вырос</p>
+          </div>
+        </article>
+        <article class="reviews__item">
+          <div class="reviews__image">
+            <img src="assets/img/review-3.jpg" alt="test">
+          </div>
+          <div class="reviews__info">
+            <h3 class="reviews__header">Русские балетные сезоны </h3>
+            <p class="news__text  reviews__text">В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p>
+          </div>
+        </article>
+        <article class="reviews__item">
+          <div class="reviews__image">
+            <img src="assets/img/review-4.jpg" alt="test">
+          </div>
+          <div class="reviews__info">
+            <h3 class="reviews__header">Сферические чудаки</h3>
+            <p class="news__text  reviews__text">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды» </p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="main__pagination"></div>
+    <article class="main__promo"></article>
+  </section>
+  <aside class="main__events"></aside>
+  <section class="main_slider"></section>
+</main>
+</body>
+</html>

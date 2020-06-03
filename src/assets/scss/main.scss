@@ -1,0 +1,30 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: $default-color;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+// Modules:
+// example: @import "modules/my-module.scss";
+@import "modules/swiper.scss";
+@import "modules/container.scss";
+@import "modules/main-menu.scss";
+@import "modules/page-header.scss";
+@import "modules/slider.scss";
+@import "modules/news.scss";
+@import "modules/main.scss";
+@import "modules/reviews.scss";

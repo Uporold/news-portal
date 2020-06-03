@@ -1,0 +1,22 @@
+.page-header {
+
+  &__text {
+    //margin-top: 40px;
+    padding: 40px 20% 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 33px;
+    @media (min-width: 1199.98px) {
+      font-size: 35px;
+    }
+    }
+  }
+
+.test {
+  fill: palegoldenrod;
+}
+
+svg:hover {
+  fill: red;
+}
