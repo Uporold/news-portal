@@ -65,8 +65,6 @@ module.exports = {
         loader: "url-loader",
         options: {
           name: "[name].[ext]",
-          outputPath: './assets/fonts',
-          publicPath: './assets/fonts',
         }
       },
       {
@@ -85,7 +83,15 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
-            options: { sourceMap: true}
+            options:
+              {
+                sourceMap: true,
+                url: false,
+                /*url: (url) => {
+                  return !url.includes('fonts');
+
+                },*/
+              }
           },
           {
             loader: "postcss-loader",
