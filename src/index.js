@@ -5,7 +5,6 @@ import './js/swiper'
 import './js/index'
 
 
-
 // SCSS
 //import './assets/scss/utils/fonts.scss'
 import './assets/scss/main.scss'
