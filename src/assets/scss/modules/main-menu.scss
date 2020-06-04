@@ -166,6 +166,13 @@
       transition: all .5s ease;
     }
   }
+
+  .main-menu__sidebar-content {
+    @media (max-width: $desktopWidth) {
+      overflow: scroll;
+      max-height: 100vh;
+    }
+  }
   .main-menu__sidebar--active {
     left: 0;
     z-index: 999;
