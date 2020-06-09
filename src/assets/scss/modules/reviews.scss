@@ -6,7 +6,6 @@
   gap: 30px 0;
   @media (min-width: $tableWidth) {
     grid-template-columns: 1fr 1fr;
-    //grid-column-gap: 28px;
     gap: 38px 28px
   }
 }
@@ -14,30 +13,27 @@
   font-size: 23px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .reviews__item {
   width: 100%;
-  object-fit: cover;
-  height: auto;
   position: relative;
 
   img {
     position: relative;
     width: 100%;
+    height: 100%;
     display: block;
     object-fit: cover;
-
-    @media (max-width: $tableWidth) {
-      transform-origin: center center;
-      transform: scale(1.3);
-    }
   }
 }
 
 .reviews__image {
   overflow: hidden;
+  display: block;
   margin-bottom: 15px;
+  height: 203px;
   @media (max-width: $tableWidth) {
     margin-bottom: 20px;
   }

@@ -25,7 +25,6 @@
 }
 
 .news__right-element {
-  display: flex;
   @media (max-width: $tableWidth) {
     margin-bottom: 30px;
   }
@@ -35,6 +34,7 @@
   position: relative;
   display: block;
   &--big {
+    width: 100%;
   }
   img {
     height: auto;
@@ -70,11 +70,13 @@
 .news__link {
   width: 100%;
   cursor: pointer;
-
+  color: $black;
+  display: flex;
   &:hover {
     color: $orange;
-    .news__info {
-      background-color: $light-gray;
+    .news__info--big {
+      background-color: fade-out($light-gray, .2);
+      transition: .5s;
     }
   }
 }

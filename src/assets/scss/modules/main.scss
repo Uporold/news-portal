@@ -1,32 +1,23 @@
 .main {
+
   padding-top: 100px;
   display: flex;
-  //justify-content: space-between;
+  justify-content: space-between;
   flex-direction: column;
+
+  order: 1;
 
   @media (min-width: $desktopWidth) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  /*img:hover {
-    filter: brightness(50%);
-    transition: filter .5s;
-  }*/
 }
-/*.main__events {
-  display: block;
-  width: 370px;
-  height: 479px;
-  background-color: #ff7931;
-}*/
 
 .main__content {
   flex-basis: 100%;
-  max-width: 100%;
   @media (min-width: 1200px) {
-    //flex-basis: 66.66666667%;
     flex-basis: 65.8%;
-    max-width: 66.66666667%;
   }
 }
 

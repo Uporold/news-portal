@@ -13,7 +13,40 @@ const swiper = new Swiper('.slider', {
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider__control--next',
+    prevEl: '.slider__control--prev',
+  }
+});
+
+const swiperSmall = new Swiper('.small-slider__container', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  updateOnWindowResize: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  /*autoplay: {
+    delay: 5000,
+  },*/
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    570: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1000: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+  navigation: {
+    nextEl: '.small-slider__control--next',
+    prevEl: '.small-slider__control--prev',
   }
 });

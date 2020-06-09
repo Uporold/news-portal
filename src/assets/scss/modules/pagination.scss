@@ -1,6 +1,5 @@
 .pagination {
   display: flex;
-  /* justify-items: center; */
   justify-content: center;
   margin-bottom: 86px;
   font-family: $paginationFont;
@@ -45,6 +44,7 @@
       width: 13px;
       height: 25px;
       justify-content: center;
+      color: inherit;
     }
 
     &--controls {
@@ -99,25 +99,5 @@
       }
 
     }
-
-   /* &--active {
-      font-size: 20px;
-      font-weight: bold;
-      opacity: 1;
-
-      @media (max-width: $tableWidth) {
-        font-size: 18px;
-        font-weight: 400;
-        border: $orange 1px solid;
-        color: $orange;
-      }
-
-      a {
-        @media (min-width: $tableWidth) {
-          border-bottom: $orange 2px solid;
-        }
-      }
-    }*/
-
   }
 }

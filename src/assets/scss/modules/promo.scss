@@ -41,11 +41,12 @@
     }
   }
   &__header {
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-family: $secondFont;
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $default-color;
+    user-select: none;
     margin-right: 47px;
 
     @media (max-width: $tableWidth) {
@@ -55,15 +56,4 @@
     }
   }
 
-  /*&__button {
-    //text-decoration: none;
-    color: $default-color;
-    font-family: $secondFont;
-    padding: 15px 60px 15px 27px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.7);
-    border: 2px solid #FF9A64;
-  }*/
 }
