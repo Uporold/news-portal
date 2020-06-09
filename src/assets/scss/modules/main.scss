@@ -1,12 +1,17 @@
 .main {
   padding-top: 100px;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
+  flex-direction: column;
 
-  img:hover {
+  @media (min-width: $desktopWidth) {
+    flex-direction: row;
+  }
+
+  /*img:hover {
     filter: brightness(50%);
     transition: filter .5s;
-  }
+  }*/
 }
 /*.main__events {
   display: block;
@@ -29,6 +34,7 @@
   font-size: 17px;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: $secondFont;
+  font-weight: bold;
+  letter-spacing: 2px;
 }

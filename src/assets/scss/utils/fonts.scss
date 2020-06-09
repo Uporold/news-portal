@@ -7,18 +7,11 @@
 @include font-face("PlayfairDisplay", "../../fonts/playfair/PlayfairDisplay-Regular", 400);
 @include font-face("PlayfairDisplay", "../../fonts/playfair/PlayfairDisplay-Black", bold);
 
-
 @include font-face("Raleway", "../../fonts/raleway/Raleway-Regular", 400);
 @include font-face("Raleway", "../../fonts/raleway/Raleway-Light", 300);
-@include font-face("Raleway", "../../fonts/raleway/Raleway-Black", bold);
+@include font-face("Raleway", "../../fonts/raleway/Raleway-SemiBold", bold);
 
-/*@include font-face("PlayfairDisplay", "/assets/fonts/playfair/PlayfairDisplay-Regular", 400);
-@include font-face("PlayfairDisplay", "/assets/fonts/playfair/PlayfairDisplay-Black", bold);
-
-
-@include font-face("Raleway", "/assets/fonts/raleway/Raleway-Regular", 400);
-@include font-face("Raleway", "/assets/fonts/raleway/Raleway-Light", 300);
-@include font-face("Raleway", "/assets/fonts/raleway/Raleway-Black", bold);*/
+@include font-face("ProximaNova", "../../fonts/proxima/ProximaNova-Semibold", bold);
 
 
 

@@ -1,0 +1,123 @@
+.pagination {
+  display: flex;
+  /* justify-items: center; */
+  justify-content: center;
+  margin-bottom: 86px;
+  font-family: $paginationFont;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__item {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.4;
+
+
+    @media (max-width: $tableWidth) {
+      &:nth-child(5),
+      &:nth-child(6){
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 13px;
+      height: 25px;
+      justify-content: center;
+    }
+
+    &--controls {
+      &:hover {
+        opacity: 1;
+        background-color: transparent;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+          svg {
+            fill: $orange;
+          }
+        }
+      }
+    }
+
+    &--prev {
+      margin-right: 35px;
+      @media (min-width: $tableWidth) {
+        margin-right: 80px;
+      }
+    }
+
+    &--next {
+      margin-left: 35px;
+      @media (min-width: $tableWidth) {
+        margin-left: 80px;
+      }
+    }
+
+    &--active {
+      font-size: 18px;
+      font-weight: 400;
+      border: $orange 1px solid;
+      color: $orange;
+      opacity: 1;
+
+
+
+      @media (min-width: $tableWidth) {
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        color: $black;
+
+        a {
+          border-bottom: $orange 2px solid;
+        }
+      }
+
+    }
+
+   /* &--active {
+      font-size: 20px;
+      font-weight: bold;
+      opacity: 1;
+
+      @media (max-width: $tableWidth) {
+        font-size: 18px;
+        font-weight: 400;
+        border: $orange 1px solid;
+        color: $orange;
+      }
+
+      a {
+        @media (min-width: $tableWidth) {
+          border-bottom: $orange 2px solid;
+        }
+      }
+    }*/
+
+  }
+}

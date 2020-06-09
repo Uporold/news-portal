@@ -35,7 +35,6 @@
   position: relative;
   display: block;
   &--big {
-    //padding-bottom: 72.5%;
   }
   img {
     height: auto;
@@ -70,6 +69,14 @@
 
 .news__link {
   width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    color: $orange;
+    .news__info {
+      background-color: $light-gray;
+    }
+  }
 }
 
 .news__header {
@@ -86,6 +93,8 @@
 .news__text {
   font-family: $secondFont;
   font-size: 14px;
+  line-height: 150%;
+  color: black;
 
   &--small {
     font-size: 10px;

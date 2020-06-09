@@ -1,12 +1,12 @@
 .main-menu  {
-  @media (max-width: $desktopWidth) {
+  @media (max-width: $smDesktopWidth) {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
   }
-  @media (min-width: $desktopWidth) {
+  @media (min-width: $smDesktopWidth) {
     padding-bottom: 47px;
   }
 
@@ -17,15 +17,27 @@
     .main-menu__button--color-orange {
       display: none;
     }
+
+    .main-menu__sidebar {
+      @media (max-width: $smDesktopWidth) {
+        width: 100%;
+      }
+
+      .main-menu__sidebar-content {
+        @media (max-width: $smDesktopWidth) {
+          overflow: hidden;
+        }
+      }
+    }
   }
 
   &__list {
     display: grid;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     row-gap: 20px;
-    @media (min-width: $desktopWidth) {
+    @media (min-width: $smDesktopWidth) {
       justify-content: space-between;
-      grid-template-columns: repeat(9, auto);
+      grid-auto-flow: column;
     }
   }
 
@@ -36,7 +48,7 @@
     background-color: $light-gray;
     //margin-bottom: 20px;
 
-    @media (min-width: $desktopWidth) {
+    @media (min-width: $smDesktopWidth) {
       font-size: 15px;
       letter-spacing: 2px;
       background-color: $default-color;
@@ -49,7 +61,7 @@
     padding: 18px 16px 18px 16px;
     color: $black;
 
-    @media (max-width: $desktopWidth) {
+    @media (max-width: $smDesktopWidth) {
       display: flex;
       &::before {
         content: "";
@@ -64,7 +76,7 @@
       }
     }
 
-    @media (min-width: $desktopWidth) {
+    @media (min-width: $smDesktopWidth) {
       padding: 0;
       &::before {
         content: "";
@@ -100,13 +112,12 @@
     }
   }
   &__button {
-    @media (max-width: $desktopWidth) {
       position: relative;
       cursor: pointer;
       display: inline-flex;
       background-color: $default-color;
-    }
-    @media (min-width: $desktopWidth) {
+
+    @media (min-width: $smDesktopWidth) {
       display: none;
     }
 
@@ -161,14 +172,14 @@
     top: 0;
     left: -100%;
     transition: all .5s ease;
-    @media (min-width: $tableWidth) and (max-width: $desktopWidth){
+    @media (min-width: $tableWidth) and (max-width: $smDesktopWidth){
       width: 50%;
       transition: all .5s ease;
     }
   }
 
   .main-menu__sidebar-content {
-    @media (max-width: $desktopWidth) {
+    @media (max-width: $smDesktopWidth) {
       overflow: scroll;
       max-height: 100vh;
     }
@@ -180,7 +191,7 @@
   .main-menu__sidebar-control {
     text-align: end;
     padding: 12px 0 30px;
-    @media (min-width: $desktopWidth) {
+    @media (min-width: $smDesktopWidth) {
       display: none;
     }
   }

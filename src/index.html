@@ -6,17 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
 <header class="page-header">
   <div class="container">
-<h1 class="page-header__text">Новости культуры</h1>
-
-    <!--<svg class="test">
-      <use xlink:href="assets/svg-sprite/icons.svg#watched" />
-    </svg>
-    -->
-
+    <h1 class="page-header__text">Новости культуры</h1>
     <div class="page-header__main-menu main-menu main-menu--active main-menu--no-js">
       <button class="main-menu__button main-menu__button--color-orange">
       </button>
@@ -198,10 +193,101 @@
         </article>
       </div>
     </div>
-    <div class="main__pagination"></div>
-    <article class="main__promo"></article>
+    <div class="main__pagination pagination">
+      <ul class="pagination__list">
+        <li class="pagination__item pagination__item--controls pagination__item--prev">
+          <a> <svg>
+            <use xlink:href="assets/svg-sprite/icons.svg#prev" />
+          </svg> </a>
+        </li>
+        <li class="pagination__item pagination__item--active">
+          <a>1</a>
+        </li>
+        <li class="pagination__item">
+          <a>2</a>
+        </li>
+        <li class="pagination__item">
+          <a>3</a>
+        </li>
+        <li class="pagination__item">
+          <a>4</a>
+        </li>
+        <li class="pagination__item">
+          <a>5</a>
+        </li>
+        <li class="pagination__item">
+          <a>...</a>
+        </li>
+        <li class="pagination__item">
+          <a>35</a>
+        </li>
+        <li class="pagination__item pagination__item--controls pagination__item--next">
+          <a> <svg>
+            <use xlink:href="assets/svg-sprite/icons.svg#next" />
+          </svg> </a>
+        </li>
+      </ul>
+    </div>
+    <article class="main__promo promo">
+      <div class="promo__container">
+        <picture class="promo__img">
+          <img src="assets/img/extra.jpg" alt="Балет">
+        </picture>
+        <h3 class="promo__header">Ох уж этот балет</h3>
+        <a class="button promo__button" href="#">Смотреть
+          <svg class="button__arrow">
+            <use xlink:href="assets/svg-sprite/icons.svg#arrow" />
+          </svg>
+        </a>
+      </div>
+    </article>
   </section>
-  <aside class="main__events"></aside>
+  <aside class="main__events events">
+    <article class="events__item">
+      <picture class="events__img">
+        <source type="image/webp" srcset="assets/img/event-1.webp">
+        <img class="testt" src="assets/img/event-1.jpg" alt="event">
+      </picture>
+      <div class="events__content">
+      <h3 class="events__header">Воздушные шары</h3>
+      <a class="button events__button">Смотреть
+        <svg class="button__arrow">
+          <use xlink:href="assets/svg-sprite/icons.svg#arrow" />
+        </svg>
+      </a>
+      </div>
+    </article>
+
+    <article class="events__item">
+      <picture class="events__img">
+        <source type="image/webp" srcset="assets/img/event-2.webp">
+        <img src="assets/img/event-2.jpg" alt="event">
+      </picture>
+      <div class="events__content">
+      <h3 class="events__header events__header--white">Необычная фотосессия</h3>
+      <a class="button events__button">Смотреть
+        <svg class="button__arrow">
+          <use xlink:href="assets/svg-sprite/icons.svg#arrow" />
+        </svg>
+      </a>
+      </div>
+    </article>
+
+    <article class="events__item">
+      <picture class="events__img">
+        <source type="image/webp" srcset="assets/img/event-3.webp">
+        <img src="assets/img/event-3.jpg" alt="event">
+      </picture>
+      <div class="events__content">
+      <h3 class="events__header events__header--white">Выставка птиц</h3>
+      <a class="button events__button">Смотреть
+        <svg class="button__arrow">
+          <use xlink:href="assets/svg-sprite/icons.svg#arrow" />
+        </svg>
+      </a>
+      </div>
+    </article>
+  </aside>
   <section class="main_slider"></section>
 </main>
 </body>
