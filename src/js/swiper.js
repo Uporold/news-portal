@@ -4,6 +4,7 @@ const swiper = new Swiper('.slider', {
   slidesPerView: 1,
   updateOnWindowResize: true,
   loop: true,
+  grabCursor: true,
   loopFillGroupWithBlank: true,
   autoplay: {
     delay: 5000,
@@ -23,6 +24,7 @@ const swiperSmall = new Swiper('.small-slider__container', {
   spaceBetween: 20,
   updateOnWindowResize: true,
   loop: true,
+  grabCursor: true,
   loopFillGroupWithBlank: true,
   /*autoplay: {
     delay: 5000,
