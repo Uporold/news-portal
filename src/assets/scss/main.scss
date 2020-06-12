@@ -9,7 +9,7 @@ body {
   font-family: $mainFont;
   font-size: $mainFontSize;
   font-weight: $mainFontWeight;
-  color:#000;
+  color: $black;
   margin: 0;
   padding: 0;
 }
@@ -21,6 +21,7 @@ body {
 @import "modules/main-menu.scss";
 @import "modules/page-header.scss";
 @import "modules/slider.scss";
+@import "modules/icon.scss";
 @import "modules/news.scss";
 @import "modules/main.scss";
 @import "modules/reviews.scss";

@@ -13,14 +13,16 @@
 
   &:hover {
     background-color: $orange;
-    transition: .5s;
+    transition: 0.5s;
+
     svg {
-      transition: .5s;
+      transition: 0.5s;
       right: 23px;
     }
   }
+
   svg {
-    transition: .5s;
+    transition: 0.5s;
     position: absolute;
     top: 13px;
     right: 33px;

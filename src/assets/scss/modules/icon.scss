@@ -1,0 +1,69 @@
+.icon {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    svg {
+      fill: $orange;
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+
+  span {
+    font-family: $paginationFont;
+    color: $light-gray;
+    margin-left: 7px;
+    font-size: 24px;
+    line-height: 1;
+    user-select: none;
+    opacity: 0.7;
+  }
+
+  svg {
+    fill: $light-gray;
+  }
+
+  &__svg {
+    fill: $light-gray;
+  }
+
+  &--bookmark {
+    fill: white;
+    top: 10px;
+    right: 10px;
+  }
+
+  &--watched {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  &--comments {
+    bottom: 10px;
+    left: 80px;
+  }
+
+  &__bookmark {
+    width: 24px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  &__watched {
+    width: 24px;
+    height: 30px;
+    opacity: 0.7;
+  }
+
+  &__comments {
+    width: 22px;
+    height: 29px;
+    opacity: 0.7;
+  }
+}

@@ -2,9 +2,9 @@
    ========================================================================== */
 
 // Font
-$mainFont                : 'PlayfairDisplay', Helvetica, Arial, sans-serif;
-$secondFont              : 'Raleway', Helvetica, Arial, sans-serif;
-$paginationFont          : 'ProximaNova', Helvetica, Arial, sans-serif;
+$mainFont                : "PlayfairDisplay", helvetica, arial, sans-serif;
+$secondFont              : "Raleway", helvetica, arial, sans-serif;
+$paginationFont          : "ProximaNova", helvetica, arial, sans-serif;
 
 // Size
 $mainFontColor           : #101010;
@@ -26,11 +26,9 @@ $smPhoneWidth            : 320px;
 
 // Main color
 $default-color           : #ffffff;
-$orange                  : #FF7931;
+$orange                  : #ff7931;
 $black                   : #000000;
 $dark-gray               : lighten($black, 30%);
 $gray                    : lighten($black, 70%);
-$light-gray              : #F9F9FC;
-
-
+$light-gray              : #f9f9fc;
 

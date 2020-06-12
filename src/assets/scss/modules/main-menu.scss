@@ -1,4 +1,4 @@
-.main-menu  {
+.main-menu {
   @media (max-width: $smDesktopWidth) {
     position: fixed;
     top: 0;
@@ -6,6 +6,7 @@
     width: 100%;
     z-index: 999;
   }
+
   @media (min-width: $smDesktopWidth) {
     padding-bottom: 47px;
   }
@@ -33,8 +34,9 @@
 
   &__list {
     display: grid;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-family: $secondFont;
     row-gap: 20px;
+
     @media (min-width: $smDesktopWidth) {
       justify-content: space-between;
       grid-auto-flow: column;
@@ -63,6 +65,7 @@
 
     @media (max-width: $smDesktopWidth) {
       display: flex;
+
       &::before {
         content: "";
         position: absolute;
@@ -78,6 +81,7 @@
 
     @media (min-width: $smDesktopWidth) {
       padding: 0;
+
       &::before {
         content: "";
         position: absolute;
@@ -87,16 +91,19 @@
         width: 0;
         display: block;
         background: $orange;
-        transition: .5s ;
+        transition: 0.5s;
       }
+
       &:hover {
         color: $orange;
-        transition: .5s ;
+        transition: 0.5s;
+
         &::before {
           opacity: 1;
           width: 100%;
         }
       }
+
       &--active {
         &::before {
           content: "";
@@ -111,11 +118,12 @@
       }
     }
   }
+
   &__button {
-      position: relative;
-      cursor: pointer;
-      display: inline-flex;
-      background-color: $default-color;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    background-color: $default-color;
 
     @media (min-width: $smDesktopWidth) {
       display: none;
@@ -126,7 +134,7 @@
       width: 30px;
       height: 30px;
 
-      &::before{
+      &::before {
         content: "";
         position: absolute;
         background-color: $gray;
@@ -136,6 +144,7 @@
         top: 15px;
         right: 0;
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -145,15 +154,16 @@
         height: 2px;
         top: 15px;
         right: 0;
-    }
+      }
     }
   }
+
   &__button--color-orange {
     background-color: $orange;
     width: 50px;
     height: 50px;
 
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       top: 15px;
@@ -164,17 +174,19 @@
       box-shadow: 0 8px 0 0 $default-color, 0 16px 0 0 $default-color;
     }
   }
-  .main-menu__sidebar{
+
+  .main-menu__sidebar {
     width: 100%;
     height: 100%;
     position: inherit;
     background-color: $default-color;
     top: 0;
     left: -100%;
-    transition: all .5s ease;
-    @media (min-width: $tableWidth) and (max-width: $smDesktopWidth){
+    transition: all 0.5s ease;
+
+    @media (min-width: $tableWidth) and (max-width: $smDesktopWidth) {
       width: 50%;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
     }
   }
 
@@ -184,13 +196,16 @@
       max-height: 100vh;
     }
   }
+
   .main-menu__sidebar--active {
     left: 0;
     z-index: 999;
   }
+
   .main-menu__sidebar-control {
     text-align: end;
     padding: 12px 0 30px;
+
     @media (min-width: $smDesktopWidth) {
       display: none;
     }

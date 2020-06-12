@@ -1,8 +1,9 @@
 .footer {
   display: none;
+
   @media (min-width: $smDesktopWidth) {
     display: block;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     padding: 26px 0 15px;
 
     &__header {
@@ -12,14 +13,13 @@
     }
 
     &__menu {
-      padding-bottom: 46px ;
+      padding-bottom: 46px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
       .main-menu__item {
         background-color: inherit;
       }
     }
-
 
 
     &__copyright {
@@ -30,5 +30,4 @@
       text-align: right;
     }
   }
-
 }

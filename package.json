@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
-    "build": "webpack --config ./build/webpack.build.conf.js"
+    "build": "webpack --config ./build/webpack.build.conf.js",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"src/assets/scss/**/*.scss\" --syntax sass",
+    "test": "npm run editorconfig && npm run stylelint"
   },
   "browserslist": [
     "> 1%",
@@ -30,6 +33,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "autoprefixer": "^9.7.3",
@@ -45,6 +49,8 @@
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.1.2",
+    "stylelint": "^13.6.0",
+    "stylelint-config-htmlacademy": "^0.1.4",
     "svg-sprite-loader": "^5.0.0",
     "url-loader": "^4.1.0",
     "webpack": "^4.41.5",

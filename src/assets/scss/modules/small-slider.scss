@@ -18,15 +18,17 @@
     position: relative;
     height: 136px;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "";
       z-index: 999;
       position: absolute;
       width: 100%;
       height: 15px;
       background-color: $default-color;
-      transition: height ease-in .1s;
+      transition: height ease-in 0.1s;
     }
+
     &::before {
       top: 0;
 
@@ -34,8 +36,10 @@
         top: -5px;
       }
     }
+
     &::after {
       bottom: 0;
+
       @media (max-width: 570px) {
         bottom: -5px;
       }
@@ -44,16 +48,18 @@
     &:hover {
       picture {
         filter: brightness(50%);
-        transition: filter .5s;
+        transition: filter 0.5s;
       }
-      &::before, &::after {
-        transition: height ease-in .1s;
+
+      &::before,
+      &::after {
+        transition: height ease-in 0.1s;
         height: 0;
       }
 
       .small-slider__content {
         opacity: 1;
-        transition: opacity ease-in .3s;
+        transition: opacity ease-in 0.3s;
       }
     }
   }
@@ -73,7 +79,7 @@
 
     img {
       @media (max-width: $smTableWidth) {
-        width: 288px
+        width: 288px;
       }
     }
   }
@@ -87,14 +93,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 27px 0 13px;
-    transition: opacity ease-in .3s;
+    transition: opacity ease-in 0.3s;
   }
 
   &__pagination {
     display: none;
+
     @media (max-width: 570px) {
       display: block;
-      bottom: -0px !important;
+      //bottom: 0 !important;
+
       .swiper-pagination-bullet {
         background: black;
       }
@@ -107,6 +115,7 @@
     cursor: pointer;
     top: 34%;
     z-index: 20;
+
     @media (min-width: 570px) {
       width: 44px;
       height: 44px;
@@ -120,8 +129,8 @@
       &::before {
         position: absolute;
         content: "";
-        height: 0px;
-        width: 0px;
+        height: 0;
+        width: 0;
         z-index: 999;
         top: 14px;
         border-top: 8px solid transparent;
@@ -136,10 +145,12 @@
           left: 15px;
         }
       }
+
       &--next {
         right: -2%;
+
         &::before {
-        transform: rotate(180deg);
+          transform: rotate(180deg);
           left: 19px;
         }
       }
@@ -155,6 +166,5 @@
 
   @media (min-width: $tableWidth) {
     order: 2;
-
   }
 }

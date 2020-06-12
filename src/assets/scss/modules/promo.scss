@@ -1,5 +1,6 @@
 .promo {
   margin-bottom: 50px;
+
   @media (max-width: $tableWidth) {
     width: 100vw;
     position: relative;
@@ -40,6 +41,7 @@
       width: 100%;
     }
   }
+
   &__header {
     font-family: $secondFont;
     font-size: 30px;
@@ -55,5 +57,4 @@
       margin-right: 0;
     }
   }
-
 }

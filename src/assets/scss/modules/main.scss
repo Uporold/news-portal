@@ -11,11 +11,11 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-
 }
 
 .main__content {
   flex-basis: 100%;
+
   @media (min-width: 1200px) {
     flex-basis: 65.8%;
   }

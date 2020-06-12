@@ -1,15 +1,19 @@
 .reviews {
   margin-bottom: 50px;
 }
+
 .reviews__container {
   display: grid;
   gap: 30px 0;
+
   @media (min-width: $tableWidth) {
     grid-template-columns: 1fr 1fr;
-    gap: 38px 28px
+    gap: 38px 28px;
   }
 }
+
 .reviews__header {
+  color: $black;
   font-size: 23px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -29,12 +33,35 @@
   }
 }
 
+.reviews__link:hover {
+  .reviews__header {
+    color: $orange;
+  }
+}
+
 .reviews__image {
   overflow: hidden;
   display: block;
   margin-bottom: 15px;
   height: 203px;
+
   @media (max-width: $tableWidth) {
     margin-bottom: 20px;
+  }
+}
+
+.reviews__image-container {
+  position: relative;
+
+  &:hover {
+    .reviews__image {
+      filter: brightness(75%);
+      transition: filter 0.5s;
+    }
+
+    .icon {
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
   }
 }
