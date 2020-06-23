@@ -9,6 +9,9 @@ const swiper = new Swiper('.slider', {
   autoplay: {
     delay: 5000,
   },
+  keyboard: {
+    enabled: true,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -26,9 +29,12 @@ const swiperSmall = new Swiper('.small-slider__container', {
   loop: true,
   grabCursor: true,
   loopFillGroupWithBlank: true,
-  /*autoplay: {
+  autoplay: {
     delay: 5000,
-  },*/
+  },
+  keyboard: {
+    enabled: true,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

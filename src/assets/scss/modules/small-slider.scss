@@ -45,7 +45,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       picture {
         filter: brightness(50%);
         transition: filter 0.5s;
@@ -121,6 +122,11 @@
       height: 44px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
       background-color: $default-color;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+      }
 
       @media (min-width: $tableWidth) {
         display: block;

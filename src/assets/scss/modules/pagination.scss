@@ -33,7 +33,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: rgba(0, 0, 0, 0.1);
     }
 
@@ -48,7 +49,8 @@
     }
 
     &--controls {
-      &:hover {
+      &:hover,
+      &:focus {
         opacity: 1;
         background-color: transparent;
       }
@@ -57,7 +59,8 @@
         width: 100%;
         height: 100%;
 
-        &:hover {
+        &:hover,
+        &:focus {
           svg {
             fill: $orange;
           }

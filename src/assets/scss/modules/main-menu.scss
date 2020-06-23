@@ -44,11 +44,9 @@
   }
 
   &__item {
-    //max-width: 100%;
     font-size: 16px;
     text-transform: uppercase;
     background-color: $light-gray;
-    //margin-bottom: 20px;
 
     @media (min-width: $smDesktopWidth) {
       font-size: 15px;
@@ -62,6 +60,20 @@
     text-decoration: none;
     padding: 18px 16px 18px 16px;
     color: $black;
+
+    &:hover,
+    &:focus {
+      color: $orange;
+      transition: 0.5s;
+
+      &::before {
+        @media (max-width: $tableWidth) {
+          border-color: $orange;
+          right: 20px;
+          transition: all 0.5s;
+        }
+      }
+    }
 
     @media (max-width: $smDesktopWidth) {
       display: flex;
@@ -94,7 +106,8 @@
         transition: 0.5s;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: $orange;
         transition: 0.5s;
 
@@ -134,26 +147,23 @@
       width: 30px;
       height: 30px;
 
-      &::before {
+      &::before,
+      &::after {
         content: "";
         position: absolute;
         background-color: $gray;
-        transform: rotate(45deg);
         width: 30px;
         height: 2px;
         top: 15px;
         right: 0;
       }
 
+      &::before {
+        transform: rotate(45deg);
+      }
+
       &::after {
-        content: "";
-        position: absolute;
-        background-color: $gray;
         transform: rotate(-45deg);
-        width: 30px;
-        height: 2px;
-        top: 15px;
-        right: 0;
       }
     }
   }
@@ -175,7 +185,7 @@
     }
   }
 
-  .main-menu__sidebar {
+  &__sidebar {
     width: 100%;
     height: 100%;
     position: inherit;
@@ -184,25 +194,25 @@
     left: -100%;
     transition: all 0.5s ease;
 
+    &--active {
+      left: 0;
+      z-index: 999;
+    }
+
     @media (min-width: $tableWidth) and (max-width: $smDesktopWidth) {
       width: 50%;
       transition: all 0.5s ease;
     }
   }
 
-  .main-menu__sidebar-content {
+  &__sidebar-content {
     @media (max-width: $smDesktopWidth) {
       overflow: scroll;
       max-height: 100vh;
     }
   }
 
-  .main-menu__sidebar--active {
-    left: 0;
-    z-index: 999;
-  }
-
-  .main-menu__sidebar-control {
+  &__sidebar-control {
     text-align: end;
     padding: 12px 0 30px;
 

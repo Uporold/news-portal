@@ -1,31 +1,30 @@
 .main {
-
   padding-top: 100px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
   order: 1;
 
   @media (min-width: $desktopWidth) {
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
 
-.main__content {
-  flex-basis: 100%;
+  &__content {
+    flex-basis: 100%;
 
-  @media (min-width: 1200px) {
-    flex-basis: 65.8%;
+    @media (min-width: 1200px) {
+      flex-basis: 65.8%;
+    }
+  }
+
+  &__header {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: $secondFont;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
 }
 
-.main__header {
-  font-size: 17px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  font-family: $secondFont;
-  font-weight: bold;
-  letter-spacing: 2px;
-}

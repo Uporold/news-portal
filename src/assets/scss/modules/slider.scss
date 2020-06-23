@@ -11,10 +11,6 @@
     overflow: hidden;
   }
 
-  &__wrapper {
-    //position: relative;
-  }
-
   &__item {
     position: relative;
     width: 100%;
@@ -47,10 +43,6 @@
       min-height: 465px;
       padding-top: 60px;
     }
-    /* @media (min-width: $desktopWidth) {
-      min-height: 465px;
-      padding-top: 60px;
-    }*/
   }
 
   &__flag {
