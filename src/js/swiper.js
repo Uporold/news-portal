@@ -1,4 +1,5 @@
 import Swiper from "swiper";
+import "../../node_modules/swiper/css/swiper.min.css"
 
 const swiper = new Swiper('.slider', {
   slidesPerView: 1,
